@@ -69,6 +69,7 @@ img {
 .contacts-nav,
 .portfolio-header .container {
   display: flex;
+  align-items: center;
 }
 .main-nav {
   align-items: center;
@@ -128,11 +129,15 @@ img {
 /* Герой */
 .hero {
   margin: 0;
-  padding-top: 200px;
-  padding-bottom: 200px;
-
   background-color: var(--primary-footer-hero-color);
 }
+
+.hero .main-hero {
+  padding: 200px 0px;
+  max-width: 696px;
+  margin: auto;
+}
+
 .hero-title {
   margin-bottom: 30px;
 
@@ -141,9 +146,9 @@ img {
   font-size: 44px;
   text-transform: uppercase;
   line-height: 1.36;
-  text-align: center;
   vertical-align: top;
   letter-spacing: 0.06em;
+  text-align: center;
 
   margin-top: 0;
   margin-bottom: 30px;
@@ -207,8 +212,7 @@ button {
 
 .feature-list .title {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   text-transform: uppercase;
   font-weight: var(--weight-bold);
@@ -241,21 +245,20 @@ button {
   background-color: var(--primary-white-color);
 }
 
+.team-list .caption {
+  padding: 30px 0px;
+  text-align: center;
+}
+
 .team-title {
-  margin-top: 30px;
   margin-bottom: 10px;
 
-  text-align: center;
   font-weight: var(--weight-middle);
   font-size: 16px;
   line-height: 1.19em;
 }
 
 .team-subtitle {
-  margin-top: 0;
-  margin-bottom: 30px;
-
-  text-align: center;
   color: var(--subtitle-text-color);
   font-weight: var(----weight-normal);
   font-size: 16px;
@@ -303,10 +306,10 @@ button {
 .button-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .button-list .item {
   margin-right: 8px;
-  margin-bottom: 50px;
 }
 .button-list .item:last-child {
   margin-right: 0;
@@ -357,17 +360,17 @@ button {
 
 /* Футер */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   min-height: 252px;
   background-color: var(--primary-footer-hero-color);
   font-weight: var(----weight-normal);
   line-height: 1.71em;
 }
 
-.footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .footer .logo {
+  padding: 0px;
   margin: 0;
   color: var(--primary-white-color);
 }
@@ -376,6 +379,7 @@ button {
   text-decoration: none;
 }
 .address {
+  margin-bottom: 9px;
   color: var(--primary-white-color);
   font-style: normal;
 }
@@ -385,6 +389,9 @@ button {
 
 .contacts a {
   color: var(--contacts-color);
+}
+.contacts-list li:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .contacts a:hover,
