@@ -129,11 +129,11 @@ img {
 /* Герой */
 .hero {
   margin: 0;
+  padding: 200px 0px;
   background-color: var(--primary-footer-hero-color);
 }
 
 .hero .main-hero {
-  padding: 200px 0px;
   max-width: 696px;
   margin: auto;
 }
@@ -251,6 +251,7 @@ button {
 }
 
 .team-title {
+  margin-top: 0px;
   margin-bottom: 10px;
 
   font-weight: var(--weight-middle);
@@ -259,6 +260,7 @@ button {
 }
 
 .team-subtitle {
+  margin: 0px;
   color: var(--subtitle-text-color);
   font-weight: var(----weight-normal);
   font-size: 16px;
